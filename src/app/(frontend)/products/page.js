@@ -12,11 +12,11 @@ export default async function Page({ searchParams }) {
       {/* nav */}
       <div className='order-first w-full flex-none md:max-w-[125px]'>
         <nav>
-          <h3 className='hidden text-xs text-neutral-500 md:block dark:text-neutral-400'>Collections</h3>
+          <h3 className='hidden text-xs md:block text-neutral-400'>Collections</h3>
           <ul className='hidden md:block'>
             {categories.map(c => (
-              <li className='mt-2 flex text-black dark:text-white' key={c.slug}>
-                <a className='w-full text-sm underline-offset-4 hover:underline dark:hover:text-neutral-100' href={`/products?cat=${c.slug}`}>{c.name}</a>
+              <li className='mt-2 flex text-white' key={c.slug}>
+                <a className='w-full text-sm underline-offset-4 hover:underline hover:text-neutral-100' href={`/products?cat=${c.slug}`}>{c.name}</a>
               </li>
             ))}
           </ul>

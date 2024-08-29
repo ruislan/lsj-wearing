@@ -17,7 +17,7 @@ export default function Logo({ size = 'default' }) {
             href='/'
             className={clsx(
                 'flex flex-none items-center justify-center',
-                'border border-neutral-700 bg-black dark:border-neutral-700 rounded-xl',
+                'border border-neutral-700 bg-black rounded-xl',
                 variants.size[size]
             )}>
             <span className='flex justify-center items-center'>L</span>
