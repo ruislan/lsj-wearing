@@ -8,7 +8,7 @@ export default function ProductSlide({
 }) {
     if (products.length === 0) return null;
     return (
-        <div className='w-full overflow-x-auto pb-6 pt-2'>
+        <div className='w-full overflow-hidden pb-6 pt-2'>
             <div className='flex animate-carousel gap-4'>
                 {products.map((product, index) => (
                     <div
